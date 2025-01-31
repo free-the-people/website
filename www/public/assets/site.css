@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+.tangerine-regular {
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .preamble {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-right: 5px;
+    max-width: 75vw;
+    margin: 5rem auto;
+  }
+
+  header {
+    clear: both;
+    display: flex;
+    flex-direction: row; /* Change to row to arrange elements side-by-side */
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space out the items */
+  }
+
+  .icon {
+      background-image: url("./img/logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 75px;
+      height: 75px;
+      display: flex;
+      column-gap: 20px;
+  }
+
+  .nav-text {
+      text-align: center;
+      flex-grow: 1; /* Allow the text to grow and shrink */
+  }
+
+  body {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: oldlace;
+  }
+
+  footer {
+    text-align: center;
+    border-top: 2px solid #bb133e;
+    padding-top: 5px;
+  }
+
+  #footer-flag {
+    height: 5vh;
+    margin-top:10px;
+    border-radius:3px;
+  }
