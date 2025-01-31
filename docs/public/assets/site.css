@@ -17,7 +17,28 @@
     text-align: center;
     padding-right: 5px;
     max-width: 75vw;
-    margin: 5rem auto;
+    margin: auto;
+  }
+
+  #vision {
+    margin: 20px auto 0px auto;
+    padding: 2rem 1rem;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+
+  #vision p, #vision blockquote {
+    font-size: 1rem;
+  }
+
+  #resolution {
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+    padding-bottom: 20px;
+  }
+
+  .whereas {
+    font-size: 2em;
   }
 
   header {
@@ -28,8 +49,12 @@
     justify-content: space-between; /* Space out the items */
   }
 
+  .center {
+    text-align: center;
+  }
+
   .icon {
-      background-image: url("./img/logo.png");
+      background-image: url("./img/logo-100.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -39,9 +64,27 @@
       column-gap: 20px;
   }
 
+  .protest-flag-vertical {
+    background-image: url("./img/protest-flag-vertical-200.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 75px;
+    display: flex;
+    column-gap: 20px;
+  }
+
   .nav-text {
-      text-align: center;
+      text-align: right;
       flex-grow: 1; /* Allow the text to grow and shrink */
+      margin-left:-114px;
+  }
+
+  .nav-text a {
+    text-decoration: none;
+    color: #bb133e;
+    font-size: 1.25rem;
   }
 
   body {
@@ -61,4 +104,12 @@
     height: 5vh;
     margin-top:10px;
     border-radius:3px;
+  }
+
+
+  #toggleContent {
+    width: 500px;
+    max-width: 75vw;
+    margin: auto;
+    text-align: justify;
   }

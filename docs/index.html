@@ -5,22 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free the People</title>
     <link rel="stylesheet" href="./public/assets/site.css"/>
-    <link rel="icon" href="./public/assets/favicon.ico"/>
+    <link rel="icon" href="./public/assets/favicon.png" type="image/png"/>
 </head>
 <body>
     <header>
-        <div class="icon"></div>
-        <div class="nav-text">free-the-people.us</div>
+        
+        <div class="icon" alt="free-the-people site logo. A stylized letter 'F' in a cursive script with enhancements "></div>
+        <a href="./public/assets/img/protest-flag-vertical.jpg" target="_blank"><div class="protest-flag-vertical" title="Protest Flag: The symbol of the free-the-people movement" alt="American Flag displayed vertically. The flag is altered from it's proper appearance. The white stripes in the flag have been replaced with black stripes."></div></a>
+        <div class="nav-text"><a href="./index.html">free-the-people.us</a></div>
     </header>
-    <hr style="clear:both"/>
-    <h1 class="tangerine-bold preamble">
-        Free the People of the United&nbsp;States<br/>in order to form a more perfect&nbsp;union.
-    </h1>
+    <section id="vision">
+        <h1 class="tangerine-bold preamble">
+            Free the people of the United&nbsp;States<br/>in order to form a more perfect&nbsp;union.
+        </h1>
+        <p style="text-align: center;">
+        <a href="#" id="toggleLink" onclick="toggleContent()">Read more...</a>
+        </p>
+        <div id="toggleContent" style="display: none;">
+            
+            <blockquote>
+                <p><b>Preamble to the United States Constitution:</b><br/>
+                We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+            </blockquote>
+            <p>
+                Our <b>vision statement</b> (above) is a play on the words of this preamble, which we hold in the utmost reverence along with the rest of the Constitution. We have taken the first two fragments of the preamble and replaced the word "we" with "free" and ended the fragment with a period to turn the whole thing into an imperative. This is our call to action: "<b>Free the people of the United States</b>." Why should we free the people? We shall free them "<b>in order to form a more perfect union.</b>"
+            </p>
+            <p>
+                The people of this nation, and indeed of any nation, must be free if they are to establish a legitimate government that serves the people it intends to govern.
+            </p>
+        </div>
+    </section>
+    <p>&nbsp;</p>
+    <section id="resolution">
+        <h3 class="center">A Resolution in Defense of Representative Democracy and the&nbsp;Rule&nbsp;of&nbsp;Law:</h3>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>, 
+            the current president has repeatedly engaged in authoritarian practices, consolidating power, undermining democratic institutions, and disregarding constitutional constraints; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            said president has appointed an unqualified loyalist regime to the highest offices of the land, whose allegiance is to the president rather than to the Constitution and the people; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            said president and his regime have demonstrated a clear disregard for the Constitution of the United States, the rule of law, and the fundamental rights of the people; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            the resulting autocracy stands in direct opposition to the principles of representative democracy and individual liberty upon which the United States was founded; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            the Founders of the United States recognized that governments derive their just powers from the consent of the governed and that when a government becomes destructive of these ends, the people have both the right and the duty to alter or abolish it; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            on July 4, 1776, the United States did not <i>ask</i> for its independence but <i>declared</i> it, asserting the natural right to self-governance and defending it against foreign aggression; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            the United States does not require permission to remain a free and democratic republic but must steadfastly defend its democratic institutions from all threats, foreign or domestic; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Whereas</span>,
+            democracy is not merely the process of electing leaders but the preservation of the constitutional principles that ensure government remains accountable to the people;
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <span class="tangerine-bold whereas">Therefore, be it resolved</span>, 
+            that we, the people of the United States, do hereby declare our intent to defend the Constitution, the rule of law, and the rights of all citizens against the encroachments of authoritarian rule; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Be it further resolved</span>,
+            that we, the people, hold it as our civic duty to take all lawful and democratic measures necessary to restore representative government, ensuring that the United States remains a nation of the people, by the people, and for the people; and
+        </p>
+        <p>
+            <span class="tangerine-bold whereas">Be it fully understood</span>,
+            that the legitimacy of any government rests not in the power it holds, but in its adherence to the principles of democracy, justice, and constitutional law&mdash;and that any government which abandons these principles abandons its claim to legitimacy.
+        </p>
+    </section>
     <footer>
         <div>
         &copy; 2025 <a href="https://free-the-people.us">free-the-people.us</a>
         </div>
-        <img id="footer-flag" src="./public/assets/img/protest-flag.jpg"/>
+        <a href="./public/assets/img/protest-flag.jpg" target="_blank">
+        <img id="footer-flag" src="./public/assets/img/protest-flag-200.jpg"/></a>
     </footer>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("toggleContent");
+            var link = document.getElementById("toggleLink");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                link.textContent = "Less...";
+            } else {
+                content.style.display = "none";
+                link.textContent = "Read more...";
+            }
+        }
+    </script>
 </body>
 </html>
