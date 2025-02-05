@@ -4,6 +4,10 @@
         "url": "/", 
         "featured": true 
     },
+    {
+        "title": "Our Protest Flag",
+        "url": "/protestflag"
+    },
     { 
         "title": "Articles",
         "children": [
