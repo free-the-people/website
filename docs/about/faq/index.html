@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+    
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE-Edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" href="/assets/images/logo.svg" sizes="any" type="image/svg+xml">
+      <link rel="stylesheet" href="/css/global.css" />
+        <!---->
+      
+      
+      <meta name="description" content="base content"/>
+      <meta property="og:image" content="/assets/images/og/og-free-the-people.jpg" data-rh="true">
+      <meta property="twitter:image" content="/assets/images/og/og-free-the-people.jpg" data-rh="true">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    
+      <title>Free the People | FAQs</title>
+    
+
+    
+      <!---->
+    
+
+  </head>
+  <body>
+    <header id="sitehead" class="siteheader">
+    <nav class="navbar-container">
+        <div class="navbar-left">
+        <a href="/">
+            <img src="/assets/images/logo.svg" height="100" alt="free-the-people.us logo" />
+        </a>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/articles/black-flag-of-freedom" title="About our protest flag">
+<img  src="/assets/images/protestflag-vertical.jpg" width="auto" height="100" eleventy:formats="webp,jpg"/>
+</a>
+
+        
+        </div>
+        <div class="navbar-right">
+            <div style="line-height:1.1rem">
+                <a href="/" class="navtext">
+                free-the-people.us
+                </a>
+            </div>
+            <!-- Button to trigger the offcanvas menu -->
+
+
+<button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+    <i class="bi bi-list"></i>
+</button>
+<!-- Offcanvas Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+      <!--Search-->
+      <input type="text" id="searchBox" placeholder="Search links..." class="form-control" />
+      <div class="accordion accordion-flush" id="navAccordion">
+            
+        <!-- Static Links -->
+        
+        <div class="accordion-item" id="static">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+                    free-the-people.us
+                </button>
+            </h2>
+            <div id="navCollapse" class="accordion-collapse">
+                <div class="accordion-body">
+                    <ul>
+                        
+                        <li><a href="/">Home</a></li>
+                        
+                        <li><a href="/about/resolution/">Our Resolution</a></li>
+                        
+                        <li><a href="/about/vision/">Vision Statement</a></li>
+                        
+                        <li><a href="/about/social-media/">Social Media/Contact</a></li>
+                        
+                        <li><a href="/articles/black-flag-of-freedom/">Our Protest Flag</a></li>
+                        
+                        <li><a href="/about/faq/">FAQ</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Featured Links -->
+        
+        <div class="accordion-item" id="featured">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#featuredCollapse">
+                    Featured Links
+                </button>
+            </h2>
+            <div id="featuredCollapse" class="accordion-collapse">
+                <div class="accordion-body">
+                    <ul>
+                        
+                        <li><a href="/articles/black-flag-of-freedom/">The Black Flag of Freedom</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--Charters of Freedom-->
+        <div class="accordion-item" id="chartersAccordion">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chartersCollapse">
+                    Charters of Freedom
+                </button>
+            </h2>
+            <div id="chartersCollapse" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="/charters-of-freedom/">The Charters of Freedom</a></li>
+                        <li><a href="/charters-of-freedom/declaration-of-independence/">The Declaration of Independence</a></li>
+                        <li><a href="/charters-of-freedom/constitution/">The Constitution of the United States</a></li>
+                        <li><a href="/charters-of-freedom/bill-of-rights/">The Bill of Rights</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles Collection -->
+        
+
+        <!-- References Collection -->
+        
+
+        <!-- Blog Collection -->
+        
+
+    </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchBox = document.getElementById('searchBox');
+        const accordionItems = document.querySelectorAll('#navAccordion .accordion-item');
+        const accordionBodies = document.querySelectorAll('.accordion-collapse');
+    
+        // Function to filter articles based on the search query
+        function filterArticles() {
+            const searchTerm = searchBox.value.toLowerCase();
+            if (searchTerm!=="") {
+                accordionItems.forEach(item => {
+                    item.style.display='';
+                    const uls = item.querySelectorAll('li');
+                    uls.forEach(ul => {
+                        ul.style.display='block';
+                        console.log('reset display for ',ul);
+                    });
+                    const buttons = item.querySelectorAll('.accordion-button');
+                        buttons.forEach(button => {
+                            button.classList.remove('collapsed');
+                        });
+                        const bodies = item.querySelectorAll('.accordion-collapse');
+                        bodies.forEach(body => {
+                            body.classList.remove('collapse');
+                            body.classList.add('show');
+                        });
+                    const matchingLinks = item.querySelectorAll('li');
+                    matchingLinks.forEach(link => {
+                        if (link.textContent.toLowerCase().includes(searchTerm)) {
+                            link.style.display='block';
+                            console.log('show ' + link.textContent);
+                        }
+                        else {
+                            link.style.display='none';
+                            console.log('hide ' + link.textContent);
+                        }
+                    })
+                });
+                accordionItems.forEach(item => {
+                    const uls = item.querySelectorAll('li');
+                    let hideParent = true;
+                    uls.forEach(ul => {
+                        if (ul.style.display!=='none') {
+                            hideParent = false;
+                        }
+                    });
+                    if (hideParent) {
+                        item.style.display='none';
+                        console.log('hiding ', item);
+                    }
+                    else {
+                        item.style.display='block';
+                    }
+                })
+            }
+            else {
+                accordionItems.forEach(item => {
+                    item.style.display='';
+                    const uls = item.querySelectorAll('li');
+                    uls.forEach(ul => {
+                        ul.style.display='block';
+                        console.log('reset display for ',ul);
+                    });
+                    if (item.getAttribute('id')!=="static") {
+                        const buttons = item.querySelectorAll('.accordion-button');
+                        buttons.forEach(button => {
+                            button.classList.add('collapsed');
+                        });
+                        const bodies = item.querySelectorAll('.accordion-collapse');
+                        bodies.forEach(body => {
+                            body.classList.add('collapse');
+                            body.classList.remove('show');
+                        });
+                    }
+                    else {
+                        const buttons = item.querySelectorAll('.accordion-button');
+                        buttons.forEach(button => {
+                            button.classList.remove('collapsed');
+                        });
+                        const bodies = item.querySelectorAll('.accordion-collapse');
+                        bodies.forEach(body => {
+                            body.classList.remove('collapse');
+                            body.classList.add('show');
+                        });
+                    }
+                });
+            }
+
+
+            /*
+            if (searchTerm==="") {
+                accordionBodies.forEach(body => {
+                    body.classList.remove('show');
+                })
+            }
+            else {
+            // Open all accordions
+            accordionBodies.forEach(body => {
+                body.classList.remove('collapse');
+            });
+            }
+            console.log("accordionItems", accordionItems);
+            // Loop through each article item to check if it matches the search term
+            accordionItems.forEach(item => {
+                const articleTitle = item.querySelector('a') ? item.querySelector('a').textContent.toLowerCase() : '';
+                
+                // If the article title matches the search term, keep it visible
+                if (articleTitle.includes(searchTerm)) {
+                    item.parentNode.style.display = '';
+                    console.log("hiding",item.parentNode);
+                } else {
+                    item.parentNode.style.display = 'none';
+                }
+                
+
+            });
+            */
+        }
+    
+        // Event listener for input change
+        searchBox.addEventListener('input', filterArticles);
+    });
+    
+  </script>
+            <div id="permalink"></div>
+        </div>
+    </nav>
+</header> 
+    <div id="content">
+      <header>
+      
+      <div id="title">
+        
+        <h2>FAQs</h2>
+        
+        <h4>Frequently-Asked Questions</h4>
+        
+        
+        
+      </div>
+      
+      </header>
+      <div id="main">
+        
+        
+          
+<p>Click to expand any question below...</p>
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="who">
+            <button type="button" aria-expanded="false" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#whoCollapse">
+                Who are you?
+            </button>
+        </h2>
+        <div class="accordion-collapse collapse" aria-labeleledby="who" id="whoCollapse">
+            <div class="accordion-body">
+                <p>Our movement, under the name <b>free-the-people.us</b>, was founded in 2025 by Doug Lockwood, a United States citizen, Navy veteran, husband, father, and patriot who has been outraged at the blatant disregard the Trump administration has shown for this country.</p>
+                <p>There are bigger, more organized movements already engaged in this fight, and those are the movements that will bring change to this country. The <b>free-the-people.us</b> movement was started as a small effort to contribute shared symbols and other resources to help show that these many wonderful movements are all part of the same fight to return our government to one <b>of the people, by the people,</b> and <b>for the people.</b></p>
+                <p>Most significantly, we offer up our <a href="/articles/black-flag-of-freedom" data-discover="true">protest flag</a> design for use by anyone who wants to show their respect for the principles upon which this country was founded while at the same time protesting the abuses of those principles.</p>
+                <p style="text-align: center;">
+                    <!--protestflaghere-->
+                </p>
+                <p>In this flag, the white stripes, symbolizing purity and innocence, have been covered in black to indicate the disgrace we feel over the betrayal of the principles of the <a href="/charters-of-freedom/" data-discover="true">Charters of Freedom</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="resolution">
+            <button type="button" aria-expanded="false" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resolutionCollapse">
+                What is the Resolution to Defend Constitutional Democracy?
+            </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="resolutionCollapse">
+            <div class="accordion-body">
+                <p>Our <a href="/about/resolution" data-discover="true">Resolution to Defend Constitutional Democracy</a> provides the framework for this movement. The resolution outlines our grievances against the totalitarian takeover of the United States, and our determination to not sit idly by and watch, but to take action to defend the Constitution, the rule of law, and the rights of the people.</p>
+                <p>While the resolution has no legal weight to it, nor will it, in and of itself, bring about any change, we have published it as a declaration of the framework for our opposition and our resolve to take <b>any actions necessary,</b> provided they are in alignment with the founding principles, to stop it.</p>
+                <p>We deliberately chose not to specify what actions we will take. The appropriate and necessary actions will vary over time, and from person to person.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="overturn">
+            <button type="button" aria-expanded="false" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#overturnCollapse">
+                Do you intend to overturn the United States government?
+            </button>
+        </h2>
+        <div class="accordion-collapse collapse" id="overturnCollapse">
+            <div class="accordion-body">
+                <p>Absolutely not!</p>
+                <blockquote class="tangerine" style="margin: 0px 3rem 1rem;">"Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes."</blockquote>
+                <p>We believe in the words of the <a href="/charters-of-freedom/declaration-of-independence" data-discover="true">Declaration of Independence</a>, which states, "Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes."</p>
+                <p>Of course, we wouldn't classify the current crisis as a "light and transient cause," but we believe the sentiment expressed in the Declaration makes it clear that replacing a governing body should only be done as a last resort.</p>
+                <p>While we strive to invoke the spirit of the founders of our nation who did, indeed, separate themselves from their previous form of government and replace it with a completely new system of government, we do not feel that such drastic measures are currently necessary.</p>
+                <p>Our nation is facing a crises, where our ruling body is acting against the founding principles of this country. This must be rectified at all costs. But such rectification involves only restoring the principles of law and rights within the existing system of government. Thus, there is no need, at this time, to overturn, abolish, or replace the system, only the abuses of the existing system.</p>
+                <p>There's nothing wrong with the way our nation's government is structured. What's wrong is how the current administration (and to a lesser extent previous administrations) have abused the principles outlined in the Charters of Freedom.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="party">
+            <button type="button" aria-expanded="false" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#partyCollapse">Is this movement/website Republican or Democrat?</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="partyCollapse">
+            <div class="accordion-body">
+                <p>No.</p>
+                <p>This movement has no affiliation with any political party.</p>
+                <p>With that being said, it is our view that the Republican party has completely sold out to Donald Trump and devolved into a party of fascists. This renders the Republican party as one beyond saving. We have reached a point where it is no longer possible to be a patriot and to be a Republican at the same time.</p>
+                <p>If you are registered as a Republican, you have an obligation to the people of the United States to leave the party. That doesn't mean you have to register as a Democrat. If you can't find a party that upholds the ideals you believe in, register as unaffiliated.</p>
+                <p>If you don't want to pick a side, one will be picked for you.</p>
+                <p><b>There were no "good" Nazis.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="violence">
+            <button type="button" aria-expanded="false" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#violenceCollapse">Do you support violent opposition?</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="violenceCollapse">
+            <div class="accordion-body">
+                <p>We do not advocate for the use of violence against our fellow compatriots.</p>
+                <p>However, we do believe that it is not enough to just politely ask the government to enforce our rights. Nor do we think it is enough to just sit at home and ignore the problems plaguing our country or protest by posting on social media. To be clear, posting your outrage on social media is a good thing, it's just not enough if that's all you're doing.</p>
+                <p>Therefore, we call on everyone in the United States to forcibly resist aggressive overreaches of power.</p>
+                <p>That's easier said than done, unfortunately. We live in a police state where police officers, government agents, and National Guard service members are all trained to incite violence whenever the voice of the people is raised too loudly, and use the ensuing violence as an excuse to break up an otherwise legal protest.</p>
+                <p>This practice is commonly used around the world to prevent organized protests against powerful leaders. And it is incredibly effective. If a group of peaceful protestors can be poked and prodded enough, some of them may react violently. As soon as one person is perceived as striking out, however futiley, against the police (or any other government personnel), the police can claim that the protest is no longer peaceful and can forcibly remove the protestors from the area. This will typically result in more violence as both sides begin to clash with one another. Before long, what started as a peaceful protest has become a violent mob.</p>
+                <p>Police and government agents are not the only ones who try to incite violence when people gather to protest. Counter-protestors have the right to assemble to make their voices heard, as well. This can lead to two large groups of people who hold drastically different ideas in close proximity to one another. Often, the two groups will taunt and insult one another, and this can lead to physical violence between the two groups. Once again, this turns a peaceful protest into a non-peaceful protest. At that point, the police (or any other government personnel) can step in to break up the protest and remove protestors from the area.</p><p>In either of these cases, images of violence shared by the media (mainstream or social) will scare many people, making them less likely to participate in future protests. That's what makes this such an effective tactic to silence the growing voice of opposition to government overreach.</p>
+                <p>&nbsp;</p>
+                <p>To counter this, we at <b>free-the-people.us</b> advocate for the use of something called <i>tactical nonviolence.</i> Using this methodology, protestors arduously train themselves in advance to remain calm and nonviolent even when provoked or attacked. This is the type of protesting that was so iconic in the 1960s sit-ins and voter registration marches. No matter how horribly they were abused, protestors refused to return violence for violence to prevent anyone from being able to claim that they were a violent mob instead of peaceful protestors. In <a href="https://www.crmvet.org/info/nv3.htm" title="Nonviolent Training, by Bruce Hartford, 2004" target="_blank">this article</a>, author Bruce Hartford explains it this way:</p>
+                <blockquote class="indent">
+                    "To be effective, a demonstration has to adhere to a code of self-discipline so that a clear and positive message is conveyed to the public and the press."
+                </blockquote>
+                <p>We can't allow protests to devolve into riots. That means that we can't allow ourselves to be provoked by police and counter-protestors into engaging in a violent response. Since anger and violence are natural human reactions to feeling threatened, the only way to avoid lashing out is to train on and practice methods to hold your ground when everything inside you is calling you to fight back.</p>
+                <p>&nbsp;</p>
+                <p>We do believe that there are times when the need for an <b>organized</b> violent opposition to an unconstitutional totalitarian rule becomes necessary. At this time, we do not believe that an organized violent opposition is necessary, but that could very easily change.</p>
+                <p>If and when violent opposition becomes necessary, it must be organized. It must be accountable to a person or identifiable group of people who can decide on behalf of the people they represent when, where, and to what degree violence is called for in a given situation. Violence must always be applied in the smallest doses possible and targeted only upon those who bear the responsibility for the oppression. Violent opposition to unlawful rulers must never be allowed to devolve into terrorism or target the innocent.</p>
+                <p style="font-size: 1.25em"><i><b>Protests, demonstrations, and marches are <b>never</b> the right time or place for violent actions.</b></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="support">
+            <button type="button" aria-expanded="false" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#supportCollapse">How can I support your movement?</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="supportCollapse">
+            <div class="accordion-body">
+                <p>The best way to support our movement is to raise a cry of protest anytime you see the government acting in ways that violate the founding principcles outlined in the <a href="/charters-of-freedom" data-discover="true">Charters of Freedom</a>.</p>
+                <p>In addition, we recommend that you talk about what is happening. Talk about it every day. Talk about it to everyone you know. Totalitarian rulers try to overwhelm the people they are oppressing to try to get them to feel overwhelmed so they stop talking about what's going on. And then they stop paying attention to what's going on. That makes them much easier to manipulate and abuse. <b>Use your voice,</b> wherever you are and whoever you're with. Be respectful of people who disagree with you, but never be silent.</p>
+                <p>Another way you can show support is to use the symbols we have created online and in-person to show your desire to restore the principles of the <a href="/charters-of-freedom" data-discover="true">Charters of Freedom</a>. You can find high-resolution digital images <a href="https://github.com/free-the-people/assets" target="_blank">here</a>.</p>
+                <p>And, of course, we encourage everyone to raise the <a href="/articles/black-flag-of-freedom">Black Flag of Freedom</a> to let the whole world know our outrage.</p>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+      </div>
+      <footer class="sitefooter">
+    <div>
+      &copy; 2025 <a href="/">free-the-people.us</a>
+      </div>
+      <div style="padding-top: 1rem;">
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+<a href="/articles/black-flag-of-freedom" title="About our protest flag">
+<img  src="/assets/images/protestflag.jpg" width="auto" height="100" eleventy:formats="webp,jpg"/>
+</a>
+
+        
+        <ProtestFlag size="small" isLink={true}/>
+      </div>
+  </footer>
+      <!--footer-->
+    </div>
+    <!-- Bootstrap 5 Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

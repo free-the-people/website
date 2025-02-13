@@ -1,0 +1,13 @@
+img.bluesky-logo-overlay {
+    position: absolute;
+    z-index: 100;
+    margin-top:50px;
+    height: 100px;
+}
+
+img.bluesky-banner {
+    border-style: solid;
+    border-color: #bb133e;
+    border-width: 1px;
+    border-radius:15px;
+}

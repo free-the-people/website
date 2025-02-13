@@ -1,0 +1,37 @@
+.whereas {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+.whereas-line {
+    line-height: 1.6em;
+    padding: 1.5rem 0;
+
+}
+
+
+#preamble, .preamble {    
+    line-height: clamp(2.5rem, 4rem, 10vh);
+    font-size: clamp(2.5rem, 3.5rem, 10vh);
+    font-weight: 700;
+    text-align: center;
+    margin: -1rem auto 1.5rem auto;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #000000;
+  }
+
+#preamble a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Tangerine", serif;
+}
+
+@media (max-width: 600px) {
+    #preamble, .preamble {
+        line-height: clamp(1.5rem, 2.25rem, 10vh);
+        font-size: clamp(1.5rem, 2.35rem, 10vh);
+        margin: 0.2rem auto 0px auto;
+      }
+}

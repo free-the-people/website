@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tangerine:wght@400;700&display=swap');
+
+:root { /*global pseudo element*/
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.65rem;
+  font-weight: 400;
+  width: 100vw !important;
+  max-width: 800px;
+  margin: 0 auto;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  /*Custom colors*/
+  --ftp-background: oldlace;
+  --ftp-emphasis-color: #bb133e;
+  --ftp-serif-font-family: "Libre Baskerville", serif;
+  --ftp-sans-serif-font-family: "Source Sans 3", sans-serif;
+  --ftp-script-font-family: "Tangerine", serif;
+  --bs-font-serif: "Libre Baskerville", serif;
+
+  /*Override bs styles */
+
+  --bs-accordion-btn-bg: var(--ftp-emphasis-color);
+  --bs-body-font-family: var(--ftp-serif-font-family) !important;
+
+}
+
+.tangerine {
+  font-family: "Tangerine", serif;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.serif {
+  font-family: "Libre Baskerville", serif;
+}
+
+sans-serif, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.15rem;
+}
+
+body {
+  padding-top: 150px;
+}
+
+html, body, :root {
+  background-color: #fdf5e6 !important;
+  font-family: "Libre Baskerville", serif;
+}
+
+
+img {
+  max-width: 95vw;
+}
+
+#content {
+  margin: 5px;
+  padding: 1rem 0px;
+  border-top: 1px solid #000000;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+blockquote.indent {
+  font-family: var("--bs-font-serif");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  width: 75%;
+}
+
+@keyframes image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/************
+footer
+************/
+.sitefooter {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #000000;
+}
+
+/************
+header
+************/
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin: 0.25rem auto;
+  max-width: 90vw;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+#permalink {
+  height: 1rem;
+  text-align: center;
+  font-size:1.5rem;
+  width: 2em;
+
+}
+
+#permalink a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 32px;
+  margin-top: auto;
+  text-align: right;
+}
+
+.navbar-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+.nav {
+    text-align: right;
+    flex-grow: 1; /* Allow the text to grow and shrink */
+    margin-left:-114px;
+  }
+  
+  a.navtext {
+  font-family: "Source Sans 3", sans-serif;
+  text-decoration: none;
+  color: var(--ftp-emphasis-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  }
+  
+  .nav-contents {    
+    display: flex;
+    flex-direction: row; /* Arrange elements side-by-side */
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space out the items */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000000;
+    margin: 0.25rem 0;
+    max-width: 90vw;
+  }
+
+  .siteheader {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--ftp-background);
+  }
+
+  .siteheader.scrolled {
+    padding: 0px 10px;
+    margin-top: 0px;
+    background-color: rgba(253, 245, 230,0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #offcanvasNav.offcanvas {
+    background-color: var(--ftp-background);
+  }
+
+  button.accordion-button {
+    background-color: var(--ftp-emphasis-color);
+    color:ghostwhite;
+    font-weight: bold;
+    font-family: var(--ftp-sans-serif-font-family);
+  }
+
+  button.accordion-button:not(.collapsed) {
+    background-color: #000000;
+    color: ghostwhite;
+  }
+
+  .offcanvas .accordion-body {
+    padding: 0.5rem 0.1rem;
+  }
+  .accordion-body, .accordion-body ul {
+    font-family: var(--ftp-serif-font-family);
+  }
+
+  .accordion-body ul {
+    list-style: none;
+    padding-left: 0.1rem;
+  }
+
+  .accordion-body a {
+    text-decoration: none;
+    color: var(--ftp-emphasis-color);
+  }
+
+  /*navmenusearch*/
+      /* Hide the accordion items by default */
+      
+      /* Show the item when it matches the search */
+      .accordion-item.show {
+        display: block;
+      }
+      /* Add a smooth transition to accordion item visibility */
+      .accordion-item {
+        transition: display 0.3s ease;
+      }
+
+
+  @media (max-width: 600px) {
+    .siteheader, .siteheader.scrolled {
+      padding: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+
+
+/*******************
+media
+*******************/
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: image-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 150px;
+  }
+  .content {
+    padding: 10px;
+  }
+}
