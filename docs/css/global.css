@@ -241,6 +241,31 @@ header
       }
 
 
+
+  .table.table-transparent, .table.table-transparent tr, .table.table-transparent td {
+     background-color: rgba(0,0,0,0) !important
+  }
+
+  .table.table-shadow {
+    border-top: 1px solid #000000; 
+    border-right: 3px solid #000000; 
+    border-bottom: 3px solid #000000; 
+    border-left: 1px solid #000000;
+    border-radius: 5px;
+  }
+
+  .caption {
+    font-size: small;
+  }
+
+  .img-link {
+    border-radius: 5px;
+  }
+
+  a .img-link {
+    cursor: pointer;
+  }
+
   @media (max-width: 600px) {
     .siteheader, .siteheader.scrolled {
       padding: 0px;
