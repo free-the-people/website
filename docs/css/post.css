@@ -57,3 +57,15 @@
   width: 100%;
   height: auto;
 }
+
+.iframe-embed {
+  width: 60vw;
+  height: calc(60vw/1.5);
+}
+
+@media (max-width: 400px) {
+  .iframe-embed {
+    width: 90vw;
+    height: calc(90vw/1.5);
+  }
+}
