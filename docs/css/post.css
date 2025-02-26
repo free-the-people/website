@@ -60,6 +60,7 @@
 
 .iframe-embed {
   width: 60vw;
+  max-width: 800px;
   height: calc(60vw/1.5);
 }
 
