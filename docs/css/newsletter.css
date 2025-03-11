@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+section.block {
+    border: 1.5px solid var('--ftp-emphasis-color');
+    border-radius:5px;
+}
+
+section.block.the-good {
+    background-color: mintcream;
+}
+
+section.block h4 {
+    font-family:"Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blob {
+    display: flex;
+}
