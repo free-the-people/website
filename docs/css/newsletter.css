@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
 section.block {
-    border: 1.5px solid var('--ftp-emphasis-color');
-    border-radius:5px;
+    border: 5px solid #bb133e;
+    border-radius:8px;
+    padding: 10px;
 }
 
 section.block.the-good {
@@ -13,6 +14,12 @@ section.block h4 {
     font-family:"Knewave", system-ui;
     font-weight: 400;
     font-style: normal;
+    margin-top: -20px;
+    margin-left: -5px;
+    float: left;
+    padding-right: 10px;
+    background-color: rgba(245,255,250, 0.9);
+    border-radius: 10px;
 }
 
 .blob {
