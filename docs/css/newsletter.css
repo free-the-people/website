@@ -1,27 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
-section.block {
-    border: 5px solid #bb133e;
-    border-radius:8px;
-    padding: 10px;
+:root {
+    --good-bg: mintcream;
+    --bad-bg: lightgoldenrodyellow;
+    --ugly-bg:mistyrose;
+    --i-bg: lightcyan;
+    --you-bg: rgb(248, 225, 248);
+    --info-bg: azure;
+    --lighter-bg: rgb(214, 248, 214);
 }
 
-section.block.the-good {
-    background-color: mintcream;
+section.block {
+    border: 0.3rem solid var(--ftp-emphasis-color);
+    border-radius:0.8rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+section.block.the-good, section.block.the-good h4 {
+    background-color: var(--good-bg);
+}
+section.block.the-bad, section.block.the-bad h4 {
+    background-color: var(--bad-bg);
+}
+section.block.the-ugly, section.block.the-ugly h4 {
+    background-color: var(--ugly-bg);
+}
+section.block.i-did, section.block.i-did h4 {
+    background-color: var(--i-bg);
+}
+section.block.you-do, section.block.you-do h4 {
+    background-color: var(--you-bg);
+}
+section.block.info, section.block.info h4 {
+    background-color: var(--info-bg);
+}
+section.block.lighter-side, section.block.lighter-side h4 {
+    background-color: var(--lighter-bg);
 }
 
 section.block h4 {
     font-family:"Knewave", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-top: -20px;
-    margin-left: -5px;
+    margin-top: -1.85rem;
+    margin-left: -0.35rem;
     float: left;
-    padding-right: 10px;
-    background-color: rgba(245,255,250, 0.9);
-    border-radius: 10px;
+    padding: 0 0.35rem;
+    border-radius: 2rem;
+    /*opacity: 1;*/
+}
+.clearfix:after {
+    clear: both;
+}
+.blob {
+    clear: both;
+}
+.blob-title {
+    font-size:1.1rem;
+    font-weight:700;
+    font-variant: italics;
+}
+.blob-title a {
+    font-size:0.75rem;
+}
+.blob-content {
+    margin-left:0.5rem;
+}
+.blob-content .image-left {
+    float: left;
+    font-size: 0.75rem;
+    border: 1px solid rgba(0,0,0, 0.2);
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.15rem;
+    text-align: center;
+}
+.blob-content .image-right {
+    float: right;
+    font-size: 0.75rem;
+    border: 1px solid rgba(0,0,0, 0.2);
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.15rem;
+    text-align: center;
+}
+.caption {
+    text-align: left !important;
 }
 
-.blob {
-    display: flex;
+.blob-content .related-links {
+    font-size:0.8rem;
+}
+.blob-content li {
+    margin-bottom: 0.25rem;
+    font-size:0.8rem;
 }

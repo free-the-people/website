@@ -64,9 +64,15 @@
   height: calc(60vw/1.5);
 }
 
+.img-link {
+  max-width:35vw;
+  height: auto !important;
+}
+
 @media (max-width: 400px) {
   .iframe-embed {
     width: 90vw;
     height: calc(90vw/1.5);
   }
 }
+
