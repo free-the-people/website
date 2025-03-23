@@ -92,7 +92,11 @@ section.block h4 {
 .blob-content .related-links {
     font-size:0.8rem;
 }
-.blob-content li {
+.blob-content .related-links li {
     margin-bottom: 0.25rem;
     font-size:0.8rem;
+}
+
+.bluesky-embed {
+    margin: 0 auto !important;
 }
