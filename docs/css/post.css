@@ -56,6 +56,13 @@
 .post__image img {
   width: 100%;
   height: auto;
+  border-radius: 1rem;
+}
+
+.post__image-credit {
+  font-size: 0.8rem;
+  color: gray;
+  text-align: center;
 }
 
 .iframe-embed {
