@@ -65,6 +65,12 @@
   text-align: center;
 }
 
+.article__image-credit {
+  font-size: 0.8rem;
+  color: gray;
+  text-align: left;
+}
+
 .iframe-embed {
   width: 60vw;
   max-width: 800px;

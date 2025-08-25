@@ -258,6 +258,14 @@ header
     font-size: small;
   }
 
+  .article.caption {
+    width:auto;
+    max-width:400px;
+    margin:0 auto 2rem auto;
+    text-align:left;
+    
+  }
+
   .img-link {
     border-radius: 5px;
   }
