@@ -140,7 +140,13 @@ header
   align-items: flex-end;
   margin-right: 32px;
   margin-top: auto;
-  text-align: right;
+}
+
+.navbar-right  ul  li {
+  padding-left:1rem;
+  text-indent:-1rem;
+  padding-bottom:0.25rem;
+  text-align:left;
 }
 
 .navbar-text {
@@ -169,7 +175,7 @@ header
     align-items: center; /* Align items vertically centered */
     justify-content: space-between; /* Space out the items */
     padding-bottom: 1rem;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #3c3b6eff;
     margin: 0.25rem 0;
     max-width: 90vw;
   }
@@ -207,7 +213,7 @@ header
   }
 
   button.accordion-button:not(.collapsed) {
-    background-color: #000000;
+    background-color: #3c3b6eff;
     color: ghostwhite;
   }
 
