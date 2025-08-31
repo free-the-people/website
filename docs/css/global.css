@@ -50,11 +50,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.15rem;
 }
 
+a {
+  color: #3b3c6e;
+}
+
+a:visited {
+  color: #a21e30;
+}
+
 body {
   padding-top: 150px;
 }
 
-html, body, :root {
+html, body, :root, .modal-content {
   background-color: #fdf5e6 !important;
   font-family: "Libre Baskerville", serif;
 }
