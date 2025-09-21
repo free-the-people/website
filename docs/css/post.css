@@ -89,3 +89,57 @@
   }
 }
 
+blockquote {
+  margin-left:0.75rem;
+  border-left: 15px solid var(--ftp-accent-color-fade);
+  padding-left: 5px;
+  color: var(--ftp-accent-color);
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+blockquote p:first-of-type::before {
+  content: "“"; /* or use open-quote if you want nesting behavior */
+  color: var(--ftp-accent-color-fade);
+  font-size: 3.5em;
+  line-height: 0.1em;
+  vertical-align: -0.5em; /* spacing so text doesn't collide with the quote */
+}
+
+blockquote p:last-of-type::after {
+  content: "”"; /* or use open-quote if you want nesting behavior */
+  color: var(--ftp-accent-color-fade);
+  font-size: 3.5em;
+  line-height: 0.1em;
+  vertical-align: -0.5em;
+  margin-right: 0.1em; /* spacing so text doesn't collide with the quote */
+}
+
+blockquote.bluesky-embed {
+  border: none !important;
+  text-align:center;
+}
+
+blockquote.bluesky-embed p:first-of-type::before {
+  content: "";
+  color: #000000;
+  font-size: 1em;
+  line-height: 1em;
+  vertical-align: 0em;
+}
+
+blockquote.bluesky-embed p:last-of-type::after {
+  content: "";
+  color: #000000;
+  font-size: 1em;
+  line-height: 1em;
+  vertical-align: 0em;
+  margin-right: 0em;
+}
+
+blockquote div.author {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-top:-1rem;
+}

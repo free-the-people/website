@@ -19,6 +19,8 @@
   /*Custom colors*/
   --ftp-background: #fdf5e6;
   --ftp-emphasis-color: #bb133e;
+  --ftp-accent-color: #3b3c6e;
+  --ftp-accent-color-fade: rgba(59, 60, 110, 0.7);
   --ftp-serif-font-family: "Libre Baskerville", serif;
   --ftp-sans-serif-font-family: "Source Sans 3", sans-serif;
   --ftp-script-font-family: "Tangerine", serif;
