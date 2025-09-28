@@ -96,6 +96,7 @@ blockquote {
   color: var(--ftp-accent-color);
   border-radius: 10px;
   font-size: 0.9em;
+  margin-bottom:0;
 }
 
 blockquote p:first-of-type::before {
@@ -142,4 +143,13 @@ blockquote div.author {
   font-weight: bold;
   font-style: italic;
   margin-top:-1rem;
+}
+
+blockquote p {
+  text-align:left;
+}
+
+figure figcaption {
+  text-align: left !important;
+  margin-left:2em;
 }
