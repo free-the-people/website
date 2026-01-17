@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
 :root {
-    --good-bg: mintcream;
+    --good-bg: rgb(222, 248, 221);
     --bad-bg: lightgoldenrodyellow;
     --ugly-bg:mistyrose;
-    --i-bg: lightcyan;
-    --you-bg: rgb(248, 225, 248);
+    --i-bg: rgb(249, 224, 255);
+    --you-bg: rgb(255, 223, 193);
     --info-bg: azure;
-    --lighter-bg: rgb(214, 248, 214);
+    --sounds-bg: rgb(228, 228, 253);
+    --lighter-bg: rgb(245, 244, 231);
 }
 
 section.block {
@@ -34,6 +35,9 @@ section.block.you-do, section.block.you-do h4 {
 }
 section.block.info, section.block.info h4 {
     background-color: var(--info-bg);
+}
+section.block.sounds, section.block.sounds h4 {
+    background-color: var(--sounds-bg);
 }
 section.block.lighter-side, section.block.lighter-side h4 {
     background-color: var(--lighter-bg);
