@@ -329,7 +329,10 @@ LIGHTBOX
   cursor: zoom-out;
 }
 
-
+/*Fix issues with scrolling to content behind fixed header*/
+[id] {
+  scroll-margin-top: 150px;
+}
 
 
 /*******************
