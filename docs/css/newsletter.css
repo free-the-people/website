@@ -9,6 +9,7 @@
     --info-bg: azure;
     --sounds-bg: rgb(228, 228, 253);
     --lighter-bg: rgb(245, 244, 231);
+    --stupid-bg: rgb(218, 245, 242);
 }
 
 section.block {
@@ -41,6 +42,9 @@ section.block.sounds, section.block.sounds h4 {
 }
 section.block.lighter-side, section.block.lighter-side h4 {
     background-color: var(--lighter-bg);
+}
+section.block.stupid, section.block.stupid h4 {
+    background-color: var(--stupid-bg);
 }
 
 section.block h4 {
