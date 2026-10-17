@@ -51,6 +51,7 @@
 
 .post__image {
   flex-grow: 1;
+  text-align: center;
 }
 
 .post__image img {
